@@ -21,8 +21,8 @@ jobs:
         node-version: 12 
 
     - name: Installing Surge
-      run: npm install -g surge
+      run: npm install -globally surge
       
     - name: Deploying through Surge
-      run: surge ./  faizanpage.surge.sh --token ${{secrets.SRUGE_TOKEN}}
+      run: surge ./ faizanpage.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
         
